@@ -1,0 +1,5 @@
+table.spec thead td { text-align: center; font-weight: bold; padding: 0 5px; border: 1px solid gray }
+table.spec tbody td { padding: 0 5px; border: 1px solid gray }
+.ok     { background-color: lime }
+.ng     { background-color: red }
+.warn   { background-color: yellow }
