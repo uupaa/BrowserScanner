@@ -1,2 +1,4 @@
 BrowserScanner
 ==============
+
+[scan](./index.html)
