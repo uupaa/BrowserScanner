@@ -18,11 +18,13 @@ window.onload = function() {
         var cell = row.insertCell(1);
         if (typeof item.state === "boolean") {
             cell.className = item.state ? "ok" : "ng";
+            row.insertCell(2).innerHTML = '<a href="' + item.spec + '" target="_blank">' +
+                                          item.id + '</a>';
         } else {
             cell.className = "warn";
+            row.insertCell(2).innerHTML = '<a href="' + item.spec + '" target="_blank">' +
+                                          item.id + " as ( " + item.state + " )" + '</a>';
         }
-        row.insertCell(2).innerHTML = '<a href="' + item.spec + '" target="_blank">' +
-                                      item.id + '</a>';
     });
 
     document.body.appendChild(table);
