@@ -1,4 +1,4 @@
-result.push((function() {
+Test().add((function() {
     var state = false;
     if (window.URL) {
         state = true;
@@ -12,8 +12,8 @@ result.push((function() {
     };
 })());
 
-result.push((function() {
-    var url = window.URL || window.webkitURL;
+Test().add((function() {
+    var url = window.URL || window.webkitURL || 0;
 
     return {
         Class: "URL", id: "URL.createObjectURL",

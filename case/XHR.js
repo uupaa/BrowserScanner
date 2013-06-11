@@ -1,8 +1,10 @@
-result.push({ Class: "XHR Lv2", id: "XMLHttpRequest responseType=arraybuffer",  state: XHRLv2("arraybuffer"),   spec: "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" });
-result.push({ Class: "XHR Lv2", id: "XMLHttpRequest responseType=blob",         state: XHRLv2("blob"),          spec: "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" });
-result.push({ Class: "XHR Lv2", id: "XMLHttpRequest responseType=document",     state: XHRLv2("document"),      spec: "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" });
-result.push({ Class: "XHR Lv2", id: "XMLHttpRequest responseType=text",         state: XHRLv2("text"),          spec: "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" });
-result.push({ Class: "XHR Lv2", id: "XMLHttpRequest responseType=json",         state: XHRLv2("json"),          spec: "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" });
+Test().add([
+    { Class: "XHR Lv2", id: "XMLHttpRequest responseType=arraybuffer",  state: XHRLv2("arraybuffer"),   spec: "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" },
+    { Class: "XHR Lv2", id: "XMLHttpRequest responseType=blob",         state: XHRLv2("blob"),          spec: "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" },
+    { Class: "XHR Lv2", id: "XMLHttpRequest responseType=document",     state: XHRLv2("document"),      spec: "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" },
+    { Class: "XHR Lv2", id: "XMLHttpRequest responseType=text",         state: XHRLv2("text"),          spec: "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" },
+    { Class: "XHR Lv2", id: "XMLHttpRequest responseType=json",         state: XHRLv2("json"),          spec: "https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" }
+]);
 
 
 function XHRLv2(responseType) {
