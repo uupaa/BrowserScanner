@@ -1,5 +1,16 @@
-Test().add({ Class: "Browser", id: "window.chrome", state: !!window.chrome, spec: "" });
-Test().add({ Class: "Browser", id: "window.opera", state: !!window.opera, spec: "" });
-Test().add({ Class: "Browser", id: "window.watch", state: !!window.watch, spec: "" });
-Test().add({ Class: "Browser", id: "window.netscape", state: !!window.scape, spec: "" });
+addEventListener("load", function() {
+    Test().spec("Browser ID", "");
+
+    var map = {
+            "Chrome (window.chrome)":       !!window.chrome,
+            "Opera (window.opera)":         !!window.opera,
+//          "Firefox (window.watch)":       !!window.watch,
+            "Firefox (window.netscape)":    !!window.netscape
+        };
+
+    for (var id in map) {
+        Test().add({ Category: "CrossBrowser", Class: "Browser ID", id: id, state: map[id] });
+    }
+    View().update();
+});
 
